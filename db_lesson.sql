@@ -1,8 +1,15 @@
 USE db_lesson;
 
-CREATE TABLE departments (
-    department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(20) NOT NULL,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+INSERT INTO reports (person_id, content) VALUES
+  (1, '2025-12-01 の日報: 顧客対応を行いました。'),
+  (1, '2025-12-02 の日報: 資料作成を行いました。'),
+  (2, '2025-12-01 の日報: バグ修正を行いました。'),
+  (2, '2025-12-02 の日報: テストを実施しました。'),
+  (3, '2025-12-01 の日報: 進捗報告をしました。'),
+  (3, '2025-12-02 の日報: 会議に参加しました。'),
+  (4, '2025-12-01 の日報: ドキュメント整備を行いました。'),
+  (4, '2025-12-02 の日報: コードレビューを行いました。'),
+  (1, '2025-12-03 の日報: 仕様確認を行いました。'),
+  (2, '2025-12-03 の日報: 問い合わせ対応を行いました.'),
+  (99,'2025-12-01 の日報: 存在しないユーザーの日報です。');
+
